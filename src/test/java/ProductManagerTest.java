@@ -52,7 +52,7 @@ public class ProductManagerTest {
         manager.add(book3);
         manager.add(smartphone1);
         Product[] actual = manager.searchBy("Потер");
-        Product[] expected = {};
+        Product[] expected = {book1};
         Assertions.assertArrayEquals(expected, actual);
 
     }
